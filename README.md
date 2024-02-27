@@ -15,6 +15,12 @@ Le contenu d'un fichier source C++ :
 #ifndef FONCTION_BIENVENUE_H
 #define FONCTION_BIENVENUE_H
 void afficherBienvenue();
+void afficherBienvenue() {
+    std::cout << "Bonjour tout le monde !" << std::endl;
+}
+void afficherBienvenue(const std::string& message) {
+    std::cout << message << std::endl;
+}
 #endif // FONCTION_BIENVENUE_H
 # Bienvenue
 Programme C++ qui affiche "Bienvenue le monde !" en utilisant la fonction
